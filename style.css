@@ -96,4 +96,18 @@
 
   /* Bear SVG eyes */
   .bear-svg { width: 80px; height: 80px; }
-  .eye { transition: d 0.2s ease; }
+  .eye { transition: d 0.2s ease; } 
+  .bear-wrap {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bear-svg {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
