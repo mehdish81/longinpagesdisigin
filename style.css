@@ -1,0 +1,99 @@
+
+  :root {
+    --bg: oklch(96% 0.005 250);
+    --surface: oklch(100% 0 0);
+    --border: oklch(88% 0.01 250);
+    --text: oklch(20% 0.01 250);
+    --muted: oklch(55% 0.01 250);
+    --accent: oklch(55% 0.18 260);
+    --accent-hover: oklch(48% 0.18 260);
+    --radius: 12px;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: var(--bg);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: var(--text);
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    width: min(380px, 92vw);
+    box-shadow: 0 2px 12px oklch(0% 0 0 / 0.06);
+  }
+
+  .bear-wrap {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+  }
+
+  .bear {
+    font-size: 4rem;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  /* eyes open */
+  .bear-face { position: relative; display: inline-block; }
+
+  h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.75rem;
+    color: var(--text);
+  }
+
+  .field { margin-bottom: 1.25rem; }
+
+  label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    color: var(--muted);
+  }
+
+  input {
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text);
+    background: var(--bg);
+    outline: none;
+    transition: border-color 0.15s;
+    font-family: inherit;
+  }
+
+  input:focus { border-color: var(--accent); }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.15s;
+    font-family: inherit;
+  }
+
+  button:hover { background: var(--accent-hover); }
+  button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  /* Bear SVG eyes */
+  .bear-svg { width: 80px; height: 80px; }
+  .eye { transition: d 0.2s ease; }

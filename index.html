@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <div class="card">
+  <div class="bear-wrap">
+    <svg class="bear-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- ears -->
+      <circle cx="18" cy="20" r="10" fill="#c8a882"/>
+      <circle cx="62" cy="20" r="10" fill="#c8a882"/>
+      <circle cx="18" cy="20" r="6" fill="#e8c9a0"/>
+      <circle cx="62" cy="20" r="6" fill="#e8c9a0"/>
+      <!-- head -->
+      <circle cx="40" cy="44" r="28" fill="#d4a96a"/>
+      <!-- muzzle -->
+      <ellipse cx="40" cy="54" rx="12" ry="8" fill="#e8c9a0"/>
+      <!-- nose -->
+      <ellipse cx="40" cy="50" rx="4" ry="2.5" fill="#5a3a1a"/>
+      <!-- mouth -->
+      <path d="M36 54 Q40 58 44 54" stroke="#5a3a1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- eyes open -->
+      <g id="eyes-open">
+        <circle cx="31" cy="40" r="5" fill="white"/>
+        <circle cx="49" cy="40" r="5" fill="white"/>
+        <circle cx="32" cy="41" r="2.5" fill="#2a1a0a"/>
+        <circle cx="50" cy="41" r="2.5" fill="#2a1a0a"/>
+        <!-- shine -->
+        <circle cx="33" cy="40" r="1" fill="white"/>
+        <circle cx="51" cy="40" r="1" fill="white"/>
+      </g>
+      <!-- eyes closed (hidden by default) -->
+      <g id="eyes-closed" style="display:none">
+        <path d="M27 40 Q31 36 35 40" stroke="#5a3a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M45 40 Q49 36 53 40" stroke="#5a3a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- hands covering eyes (hidden by default) -->
+      <g id="hands" style="display:none">
+        <ellipse cx="24" cy="40" rx="10" ry="8" fill="#c8a882" transform="rotate(-15 24 40)"/>
+        <ellipse cx="56" cy="40" rx="10" ry="8" fill="#c8a882" transform="rotate(15 56 40)"/>
+      </g>
+    </svg>
+  </div>
+
+  <h1>خوش اومدی 👋</h1>
+
+  <div class="field">
+    <label for="email">ایمیل</label>
+    <input type="email" id="email" placeholder="example@email.com" autocomplete="email">
+  </div>
+
+  <div class="field">
+    <label for="password">رمز عبور</label>
+    <input type="password" id="password" placeholder="••••••••" autocomplete="current-password">
+  </div>
+
+  <button type="button">ورود</button>
+</div>
+</body>
+</html>
